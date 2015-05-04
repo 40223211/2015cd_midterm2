@@ -31,7 +31,7 @@
 <v t="2014fall.20141212095015.1776"><vh>&lt;&lt;declarations&gt;&gt; (wsgi)</vh></v>
 <v t="2014fall.20141212095015.1777" a="E"><vh>class Midterm</vh>
 <v t="amd.20150503182609.1"><vh>__init__</vh></v>
-<v t="amd.20150503173602.1"><vh>index</vh></v>
+<v t="amd.20150503173602.1"><vh>index2</vh></v>
 <v t="amd.20150503183542.1"><vh>spur2</vh></v>
 <v t="amd.20150503183546.1"><vh>spuraction</vh></v>
 <v t="amd.20150503185058.1"><vh>drawspur</vh></v>
@@ -1739,7 +1739,7 @@ if (!newfile.Status) {
 @cherrypy.expose
 # index 方法為 CherryPy 各類別成員方法中的內建(default)方法, 當使用者執行時未指定方法, 系統將會優先執行 index 方法
 # 有 self 的方法為類別中的成員方法, Python 程式透過此一 self 在各成員方法間傳遞物件內容
-def index(self):
+def index2(self):
     outstring = '''
     &lt;!DOCTYPE html&gt; 
     &lt;html&gt;
@@ -1747,7 +1747,7 @@ def index(self):
     &lt;meta http-equiv="content-type" content="text/html;charset=utf-8"&gt;
     &lt;/head&gt;
     &lt;body&gt;
-    &lt;a href="spur"&gt;spur&lt;/a&gt;&lt;br /&gt;
+    &lt;a href="spur2"&gt;spur2&lt;/a&gt;&lt;br /&gt;
     &lt;a href="drawspur"&gt;drawspur&lt;/a&gt;&lt;br /&gt;
     &lt;/body&gt;
     &lt;/html&gt;
@@ -1813,7 +1813,7 @@ def spur2(self, N=20, M=5, P=15):
 壓力角:&lt;input type=text name=P value = '''+str(P)+'''&gt;&lt;br /&gt;
 &lt;input type=submit value=send&gt;
 &lt;/form&gt;
-&lt;br /&gt;&lt;a href="index"&gt;index&lt;/a&gt;&lt;br /&gt;
+&lt;br /&gt;&lt;a href="index2"&gt;index2&lt;/a&gt;&lt;br /&gt;
 &lt;/body&gt;
 &lt;/html&gt;
 '''
